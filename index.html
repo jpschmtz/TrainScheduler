@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Times</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Train Time</h1>
+    </div>
+    <div class="container">
+        <h3>I Choo-Choo-Choose you!</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequnecy (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                    <!-- <th scope="col">First Train</th> -->
+                </tr>
+            </thead>
+            <tbody>
+
+
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h3>Add Train</h3>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Train Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="dest">Destination</label>
+                <input type="text" class="form-control" id="dest">
+            </div>
+            <div class="form-group">
+                <label for="freq">Frequnecy (Minutes)</label>
+                <input type="text" class="form-control" id="freq">
+
+            </div>
+            <div class="form-group">
+                <label for="first">First Train (24 HH:MM)</label>
+                <input type="text" class="form-control" id="first">
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+    </div>
+
+    <script src="assests/javascript/logic.js"></script>
+</body>
+
+</html>
